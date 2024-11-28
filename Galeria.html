@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistemática</title>
+    <link rel="stylesheet" href="Galeria.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="iconfav.webp" type="image/x-icon" /><!--Ícone web-->
+  </head>
+  <body>
+    <header>  <!--Cabeçalho -->
+      <h2 class="logo">A.A.A SISTEMÁTICA</h2>
+      <div class="navbar-container">
+        <img src="imagens/logo.PNG" alt="" />
+        <nav class="navigation">  <!--Menu de navegação-->
+          <a href="sistematica.html">Início</a>
+          <a href="Galeria.html">Galeria</a>
+          <a href="diretoria.html">Diretoria</a>
+        </nav>
+        <div class="menu-mobile-container"> <!--Menu de navegação mobile-->
+          <button id="teste" active="false" class="menu-mobile">menu</button>
+          <div id="teste2" class="menus-mobile">
+            <a href="sistematica.html">Início</a>
+            <a href="Galeria.html">Galeria</a>
+            <a href="diretoria.html">Diretoria</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="gallery"> <!-- adicionando imagens da galeria -->
+      <img src="imagens/timecompleto.jpg" alt="Foto 1" />
+      <img src="imagens/timereunido.jpg" alt="Foto 2" />
+      <img src="imagens/campeao.jpeg" alt="Foto 3" />
+      <img src="imagens/semis.jpeg" alt="Foto 4" />
+      <img src="imagens/sistematicaa.jpeg" alt="Foto 5" />
+      <img src="imagens/timeseis.jpeg" alt="Foto 6" />
+      <img src="imagens/timesete.jpeg" alt="Foto 7" />
+      <img src="imagens/ataque.jpeg" alt="Foto 8" />
+      <img src="imagens/jadson2.jpg" alt="Foto 9" />
+      <img src="imagens/pablo e jadson.jpg" alt="Foto 10" />
+      <img src="imagens/sistematicaaa.jpeg" alt="Foto 11" />
+      <img src="imagens/mickael.jpg" alt="Foto 12" />
+      
+    </div>
+
+    <script> // Script do menu mobile //
+      const menu = document.getElementById("teste");
+      const menus = document.getElementById("teste2");
+      menu.addEventListener("click", (event) => {
+        console.log("teste");
+        const verify = menu.getAttribute("active");
+        console.log("teste: ", verify);
+        if (verify == "false") {
+          menu.setAttribute("active", "true");
+          menus.style.display = "flex";
+        } else {
+          menu.setAttribute("active", "false");
+          menus.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

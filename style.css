@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0; /*Define a margem*/
+  padding: 0; /*Define o preenchimento*/
+  box-sizing: border-box; /*Faz com que a largura e altura do elemento incluam o preenchimento e a borda, mas não a margem*/
+  font-family: "Poppins", sans-serif; /*Define a fonte padrão, seguida de fontes genéricas do tipo sans-serif*/
+}
+
+body {
+  background-color: #eac745; /*Define a cor de fundo*/
+  min-height: 100vh; /*Define a altura mínima do corpo*/
+  overflow-x: hidden; /*Oculta a barra de rolagem horizontal caso o conteúdo seja maior que a largura da janela de visualização*/
+  font-family: "Poppins", sans-serif; /*Define a fonte do texto, seguida de fontes genéricas do tipo sans-serif*/
+  font-weight: 400px; /*Define o peso da fonte*/
+  font-size: normal; /*Define o tamanho da fonte*/
+}
+
+#fotoinicio {
+  width: 100%; /*Define a largura*/
+  height: 100%; /*Define a altura*/
+  opacity: 0.87; /*Define a opacidade da imagem*/
+}
+
+.container {
+  display: flex; /*Define o modelo de layout*/
+}
+header {
+  border-image-width: 30px; /* Define a largura da borda da imagem do elemento */
+  width: 100%; /* Define a largura do elemento como 100% */
+  padding: 30px 100px; /* Adiciona um preenchimento interno de 30px no topo e na parte inferior, e 100px nas laterais esquerda e direita */
+  display: flex; /* Define o modelo de layout do elemento como flexível, permitindo o uso de propriedades de flexbox */
+  justify-content: space-between; /* Distribui os itens dentro do contêiner com espaço igual entre eles */
+  align-items: center; /* Alinha os itens dentro do contêiner flexível ao centro verticalmente */
+  z-index: 100; /* Define o índice de empilhamento do elemento */
+}
+
+.header {
+  position: absolute; /* Define a posição do elemento de forma absoluta */
+  top: 0; /* Posiciona o topo do elemento */
+  left: 0;  /* Posiciona o lado esquerdo do elemento */
+}
+
+.logo {
+  font-size: 2em; /*Tamanho da fonte da logo*/
+  color: #0c0c0c; /* Define a cor do texto da logo */ 
+  pointer-events: none; /* Desabilita todos os eventos de ponteiro no elemento, tornando-o não interativo */
+}
+.navigation a {
+  /*Barra de navegação*/
+  text-decoration: none; /*Sublinhado em baixo do elemento*/
+  color: #000000; /*Define a cor do texto*/
+  padding: 6px 15px; /*Preenchimento*/
+  border-radius: 20px; /*Raio da borda*/
+  margin: 0 10px; /*Adiciona uma margem de 10px nas laterais esquerda e direita, e 0 no topo e na parte inferior*/
+  font-weight: 600; /*Define o peso da fonte*/
+  font-size: 20px; /* Define o tamanho da fonte*/ 
+}
+.navigation a:hover,
+.navigation a.active {
+  background: #333; /*Define a cor de fundo*/
+  color: #fff; /*Define a cor do texto*/
+}
+.asistematica {
+  position: relative; /*Altera a posição do elemento HTML em relação ao local onde ele normalmente aparece*/
+  display: flex; /*Permite que os elementos responsivos sejam organizadors automaticamente*/
+  justify-content: center; /*Alinhar o text h2*/
+  align-items: center; /*Centralizar o h2*/
+  height: 100vh; /*Altura do h2*/
+}
+#text {
+  position: absolute; /*Posiciona o elemento de forma absoluta*/
+  margin-top: 720px; /*Define a margem superior do elemento*/
+  font-size: 6em; /* Tamanho da fonte*/
+  color: #000000; /*Define a cor do texto*/
+  text-shadow: rgba(0, 0, 0, 2); /*Adiciona uma sombra de texto com cor preta e opacidade*/
+}
+
+#txt2 {
+  position: absolute; /*Posiciona o elemento de forma absoluta*/
+  margin-top: 840px; /*Define a margem superior do elemento*/
+  color: #000000; /*Define a cor do texto*/
+  text-shadow: rgba(0, 0, 0, 2); /*Adiciona uma sombra de texto*/
+}
+
+img {
+  margin-right: auto; /*Define a margem direita automática*/
+  height: 100px; /*Define a altura da imagem*/
+  object-fit: cover; /*Faz com que a imagem preencha o contêiner*/
+}
+
+.seg {
+  position: relative; /*Define a posição do elemento*/
+  background: #eac745; /*Define a cor de fundo*/
+  padding: 100px; /*Faz com que a imagem cubra completamente o contêiner*/
+} 
+.seg h2 {
+  font-size: 2em; /*Define o tamanho da fonte do h2*/
+  color: #0c0c0c; /*Define a cor do texto do h2*/
+  margin-bottom: 10px; /*Define a margem inferior do h2*/
+}
+
+.sec p {
+  font-size: 1m; /*Define o tamanho da fonte do parágrafo*/
+  color: #0c0c0c; /*Define a cor do texto do parágrafo*/
+}
+
+.menu-mobile,
+.menus-mobile {
+  display: none; /*Oculta os elementos com as classes .menu-mobile e .menus-mobile, não exibindo-os na página*/
+}
+
+.navbar-container {
+  display: flex; /*Define o modelo de layout como flexível*/
+  width: 100%; /*Define a largura do elemento como 100% do seu elemento pai*/
+  align-items: center; /*Alinha os itens dentro do contêiner*/
+  z-index: 5; /*Define o índice de empilhamento do elemento*/
+}
+
+@media screen and (max-width: 1300px) {
+  header {
+    flex-direction: column; /*Altera a direção dos itens no contêiner flexível para coluna*/
+  }
+
+  .navigation {
+    display: none; /*Oculta o elemento com a classe .navigation, não exibindo-o na página */
+    margin: 200px; /*Define uma margem*/
+    font-size: 6em; /*Define o tamanho da fonte*/
+  }
+
+  #text {
+    position: absolute; /*Posiciona o elemento de forma absoluta*/
+    font-size: 35px; /*Define o tamanho da fonte*/
+    color: #0c0c0c; /*Define a cor do texto*/
+    text-shadow: rgba(0, 0, 0, 2); /*Adiciona uma sombra de texto*/
+  }
+
+  .menu-mobile-container {
+    display: flex; /*Define o modelo de layout como flexível*/
+    flex-direction: column; /*Altera a direção dos itens no contêiner flexível para coluna*/
+    align-items: flex-start; /*Alinha os itens dentro do contêiner flexível ao início do eixo transversal (esquerda)*/
+    gap: 10px; /*Define o espaçamento*/ 
+    position: relative; /*Define a posição do elemento*/
+  }
+  .menu-mobile {
+    display: flex; /*Define o modelo de layout*/
+    background-color: #333; /*Define a cor de fundo*/
+    color: #fff; /*Define a cor do texto*/
+    border: none; /*Remove a borda*/
+    padding: 10px; /*Adiciona um preenchimento*/
+    border-radius: 15px; /*Define um raio de borda*/
+    cursor: pointer; /*Altera o cursor do mouse para indicar que o elemento é clicável*/
+  }
+  .menus-mobile {
+    background-color: #fff; /*Define a cor de fundo*/
+    display: flex; /*Define o modelo de layout*/
+    flex-direction: column; /*Altera a direção dos itens no contêiner flexível para coluna*/
+    padding: 20px; /*Adiciona um preenchimento*/ 
+    gap: 10px; /*Define o espaçamento*/
+    position: absolute; /*Define a posição do elemento como absoluta*/
+    bottom: -140px; /*Define a distância do elemento*/
+    border-radius: 15px; /*Define um raio de borda*/
+  }
+
+  .menus-mobile a {
+    text-decoration: none; /*Remove o sublinhado dos links*/
+    color: #555; /*Define a cor do texto dos links*/
+  }
+}
+footer h2 a {
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+.footer-logo {
+  width: 40px; /* Ajuste a largura conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-right: 0px; /* Espaçamento à direita das logos */
+  margin-left: 100px; /* Espaçamente á esquerda das logos */
+}

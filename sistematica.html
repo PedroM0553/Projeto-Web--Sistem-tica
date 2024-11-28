@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistemática</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> <!--Ícone web-->
+  </head>
+  <body>
+    <header class="header"> <!--Cabeçalho -->
+      <h2 class="logo">A.A.A SISTEMÁTICA</h2>
+      <div class="navbar-container">
+        <img src="imagens/logo.PNG" alt="" />
+        <nav class="navigation"> <!--Menu de navegação-->
+          <a href="sistematica.html">Início</a>
+          <a href="Galeria.html">Galeria</a>
+          <a href="diretoria.html">Diretoria</a>
+        </nav>
+        <div class="menu-mobile-container"> <!--Menu de navegação mobile-->
+          <button id="teste" active="false" class="menu-mobile">menu</button>
+          <div id="teste2" class="menus-mobile">
+            <a href="sistematica.html">Início</a>
+            <a href="Galeria.html">Galeria</a>
+            <a href="diretoria.html">Diretoria</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="asistematica"> <!--Parte central com a foto de início-->
+      <img id="fotoinicio" src="imagens/fotoinicio.jpg" alt="time" />
+      <h2 id="text">SISTEMÁTICA</h2>
+      <h3 id="txt2">ATLÉTICA DE CIÊNCIAS DA COMPUTAÇÃO DA ESTÁCIO</h3>
+    </section>
+    <section class="seg"> <!--Texto com a história da atlética-->
+      <h2>Atlética de Ciências da Computação</h2>
+      <p>
+        Fundada em 2023, a associação atlética acadêmica sistemática surgiu com
+        o intuito de representar e acolher os alunos de computação da faculdade
+        Estácio Ceut por meio de atividades de bem-estar e acadêmicas.
+        Atualmente conta com times esportivos de futsal e vôlei, mas com o
+        pensamento de expandir cada vez mais na questão do esporte e inclusão.
+        Ademais, a Sistemática promove diversos eventos para fins informativos e
+        de entretenimento, tanto no mundo físico como no virtual. Juntamente com
+        a coordenação dos cursos parceiros estamos a disposição dos alunos, para
+        uma melhor experiência acadêmica universitária. E lembre-se “Uma vez
+        caveira, sempre caveira!!!”
+      </p>
+    </section>
+    <footer> <!--Rodapé com as logos e links-->
+      <a href="https://www.instagram.com/aaa_sistematica" target="_blank"
+        ><img src="imagens/insta.png" alt="Instagram" class="footer-logo"
+      /></a>
+      <a href="https://chat.whatsapp.com/Bj2QkUsYf2GLePIgbTf8g6" target="_blank"
+        ><img src="imagens/whats.png" alt="WhatsApp" class="footer-logo"
+      /></a>
+      <a href="https://www.tiktok.com/@aaasistematica" target="_blank"
+        ><img src="imagens/tiktok.png" alt="TikTok" class="footer-logo"
+      /></a>
+    </footer>
+    <script> // Script do menu mobile //
+      const menu = document.getElementById("teste");
+      const menus = document.getElementById("teste2");
+      menu.addEventListener("click", (event) => {
+        console.log("teste");
+        const verify = menu.getAttribute("active");
+        console.log("teste: ", verify);
+        if (verify == "false") {
+          menu.setAttribute("active", "true");
+          menus.style.display = "flex";
+        } else {
+          menu.setAttribute("active", "false");
+          menus.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

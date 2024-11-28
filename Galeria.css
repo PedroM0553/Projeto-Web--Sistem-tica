@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0; /*Remove a margem padrão*/
+    padding: 0; /*Remove o preenchimento padrão*/
+    box-sizing: border-box; /*Faz com que a largura e altura incluam preenchimento e borda*/
+    font-family: 'Poppins', sans-serif; /*Define a fonte padrão para o documento*/
+}
+
+body {
+    background: #eac745; /*Define a cor de fundo*/
+    min-height: 100vh; /*Define a altura mínima*/
+    overflow-x: hidden; /*Oculta a barra de rolagem horizontal*/
+    font-family: 'Poppins', sans-serif; /*Define a fonte para o texto*/
+    font-weight: 400px; /*Define o peso da fonte*/
+    font-size: normal; /*Define o tamanho da fonte como normal*/
+}
+
+.container {
+    display: flex; /*Define um modelo de layout*/
+
+}
+
+header {
+    border-image-width: 30px; /*Define a largura da borda*/
+    position: absolute; /*Define a posição absoluta*/
+    top: 0; /*Posiciona o elemento no topo*/
+    left: 0;  /*Posiciona o elemento na esquerda*/
+    width: 100%; /*Define a largura*/
+    padding: 30px 100px; /*Adiciona preenchimento*/
+    display: flex; /*Define um modelo de layout flexível*/
+    justify-content: space-between; /*Espaço */ 
+    align-items: center; /*Alinha os itens verticalmente*/
+    z-index: 100; /*Define o índice de empilhamento*/
+}
+
+.logo {
+    font-size: 2em; /*Tamanho da fonte da logo*/
+    color: #333; /*Define a cor do texto da logo*/
+    pointer-events: none; /*Desabilita eventos de ponteiro para a logo*/
+}
+
+.navigation a { /*Barra de navegação*/
+    text-decoration: none; /*Sublinhado em baixo do elemento*/
+    color: #333; /*Define a cor do texto dos links*/
+    padding: 6px 15px; /*Preenchimento*/
+    border-radius: 20px; /*Raio da borda*/
+    margin: 0 10px; /*Adiciona margem*/
+    font-weight: 600; /*Define o peso da fonte*/
+    font-size: 20px; /*Define o tamanho da fonte*/
+}
+
+.navigation a:hover, 
+.navigation a.active {
+    background: #333; /*Cor de fundo quando o link está em estado de hover ou ativo*/
+    color: #fff; /*Cor do texto quando o link está em estado de hover ou ativo*/
+} 
+
+.asistematica {
+    position: relative; /*Altera a posição do elemento HTML em relação ao local onde ele normalmente aparece*/
+    display: flex;/*Permite que os elementos responsivos sejam organizadors automaticamente*/
+    justify-content: center; /*Alinhar o text h2/
+    align-items: center; /*Centralizar o h2*/
+    height: 100vh; /*Altura do h2*/
+}
+
+#text {
+    position: absolute; /* Posiciona o elemento de forma absoluta */
+    font-size: 6em; /* Define o tamanho da fonte */
+    color: #333; /* Define a cor do texto */
+    text-shadow: rgba(0, 0, 0, 2) /* Adiciona uma sombra de texto */
+}
+
+img {
+    margin-right: auto; /* Define a margem direita automática */
+    height: 100px; /* Define a altura da imagem*/
+}
+
+.gallery {
+    display: grid; /* Define um layout de grade*/
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Define as colunas da grade com tamanho automático */
+    grid-auto-rows: 50px; /* Define a altura */
+    gap: 300px; /* Define o espaçamento */
+    margin-top: 180px; /* Define a margem superior */
+    margin-left: 150px; /* Define a margem esquerda */
+    margin-right: 270px; /* Define a margem direita */
+}
+
+.gallery img {
+    width: 450px; /* Define a largura da imagem */
+    height: 250px; /* Define a altura da imagem */
+    border: 7px solid; /* Adiciona uma borda à imagem */
+    border-color: black; /* Define a cor da borda */
+    box-shadow: 0 10px 30px; /* Adiciona uma sombra à imagem */
+    scale: 1.1; /* Define a escala da imagem */
+    transition: 0.5s;/* Adiciona uma transição suave */
+}
+
+.gallery img:hover{
+    height: 300px;  /* Define a altura da imagem ao passar o mouse sobre ela */
+}
+
+
+
+
+
+

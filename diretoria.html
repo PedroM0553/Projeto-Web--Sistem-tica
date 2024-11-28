@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <style>
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      height: 700px;
+      position: relative;
+      align-items: center;
+    }
+  </style>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="iconsis.webp" type="image/x-icon" />
+    <title>Diretoria</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="diretoria.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> <!--Ícone web-->
+  </head>
+
+  <body>
+    <div class="container">
+      <header>  <!--Cabeçalho -->
+        <h2 class="logo">A.A.A SISTEMÁTICA</h2> 
+        <div class="navbar-container">
+          <img src="imagens/logo.PNG" alt="" />
+          <nav class="navigation">  <!--Menu de navegação-->
+            <a href="sistematica.html">Início</a>
+            <a href="Galeria.html">Galeria</a>
+            <a href="diretoria.html">Diretoria</a>
+          </nav>
+          <div class="menu-mobile-container"> <!--Menu de navegação mobile-->
+            <button id="teste" active="false" class="menu-mobile">menu</button>
+            <div id="teste2" class="menus-mobile">
+              <a href="sistematica.html">Início</a>
+              <a href="Galeria.html">Galeria</a>
+              <a href="diretoria.html">Diretoria</a>
+            </div>
+          </div>
+        </div>
+      </header> <!-- adicionando imagens da diretoria -->
+
+      <div class="imgs-row">
+        <div class="imgs-container">
+          <div class="img-container">
+            <img src="imagens/jon.jpeg" alt="" />
+            <div class="labels-container">
+              <h4>Presidente</h4>
+              <span>Jon </span>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="imagens/lucas.jpeg" alt="" />
+            <div class="labels-container">
+              <h4>Vice-Presidente</h4>
+              <span>Lucas Pinto</span>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="imagens/jadson.jpeg" alt="" />
+            <div class="labels-container">
+              <h4>Diretor de Eventos</h4>
+              <span>Jadson Gregório</span>
+            </div>
+          </div>
+        </div>
+        <div class="imgs-container">
+          <div class="img-container">
+            <img src="imagens/depaulo.jpeg" alt="" />
+            <div class="labels-container">
+              <h4>Diretor de Marketing</h4>
+              <span>Paulo</span>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="imagens/icaro.jpeg" alt="" />
+            <div class="labels-container">
+              <h4>Diretor de Esportes</h4>
+              <span>Icaro Michael</span>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="imagens/carlos.jpeg" alt="" />
+            <div class="labels-container">
+              <h4>Vice-Diretor de Eventos</h4>
+              <span>Carlos Wagner</span>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="imagens/nahtanm.jpeg" alt="" />
+            <div class="labels-container">
+              <h4>Secretário</h4>
+              <span>Nahtanm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <section class="seg"></section>
+    
+    <script> // Script do menu mobile //
+      const menu = document.getElementById("teste");
+      const menus = document.getElementById("teste2");
+      menu.addEventListener("click", (event) => {
+        console.log("teste");
+        const verify = menu.getAttribute("active");
+        console.log("teste: ", verify);
+        if (verify == "false") {
+          menu.setAttribute("active", "true");
+          menus.style.display = "flex";
+        } else {
+          menu.setAttribute("active", "false");
+          menus.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

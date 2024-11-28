@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
+  box-sizing: border-box; /* Garante que a largura e altura incluam preenchimento e borda */
+  font-family: "Poppins", sans-serif; /* Define a fonte padrão */
+}
+
+body {
+  background: #eac745;/* Define a cor de fundo do corpo */
+  min-height: 100vh; /* Garante a altura mínima*/
+  overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+  font-family: "Poppins", sans-serif; /* Define a fonte */
+  font-weight: 400px; /* Define o peso da fonte */
+  font-size: normal; /* Define o tamanho da fonte como normal */
+}
+
+header {
+  border-image-width: 30px; /* Define a largura da borda da imagem */
+  width: 100%; /* Define a largura */
+  padding: 30px 100px; /* Adiciona preenchimento */
+  display: flex; /* Define um modelo de layout flexível */
+  justify-content: space-between; /* Distribui os itens com espaço entre eles */
+  align-items: center; /* Alinha os itens */
+  z-index: 100; /* Define o índice de empilhamento */
+}
+
+.logo {
+  font-size: 2em; /*Tamanho da fonte da logo*/
+  color: #333; /* Define a cor do texto */
+  pointer-events: none; /* Desabilita eventos de ponteiro para o elemento, tornando-o não interativo */
+}
+
+.navigation a {
+  /* Barra de navegação */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #333; /* Define a cor do texto */
+  padding: 6px 15px; /* Adiciona preenchimento interno */
+  border-radius: 20px; /* Define o raio da borda */
+  margin: 0 10px; /* Adiciona margem nos lados */
+  font-weight: 600; /* Define o peso da fonte como negrito */
+  font-size: 20px; /* Define o tamanho da fonte */
+}
+
+.navigation a:hover,
+.navigation a.active {
+  background: #333; /* Define a cor de fundo quando o link está em estado de hover ou ativo */
+  color: #fff; /* Define a cor do texto quando o link está em estado de hover ou ativo */
+}
+
+.asistematica {
+  position: relative; /*Altera a posição do elemento HTML em relação ao local onde ele normalmente aparece*/
+  display: flex; /*Permite que os elementos responsivos sejam organizadors automaticamente*/
+  justify-content: center; /*Alinhar o text h2*/
+  align-items: center; /*Centralizar o h2/
+    height: 100vh; /*Altura do h2*/
+}
+
+#text {
+  position: absolute;  /* Define a posição do elemento como absoluta */
+  font-size: 1em; /* Define o tamanho da fonte */
+  color: #333; /* Define a cor do texto */
+  text-shadow: rgba(0, 0, 0, 2); /* Adiciona uma sombra de texto */
+}
+
+img {
+  margin-right: auto; /* Define a margem direita como automática */
+  height: 100px; /* Define a altura da imagem */
+}
+
+.seg h2 {
+  font-size: 1em; /* Define o tamanho da fonte */
+  color: #333; /* Define a cor do texto */
+  margin-bottom: 10px; /* Adiciona margem inferior */
+}
+
+.sec p {
+  font-size: 1m; /* Define o tamanho da fonte */
+  color: #333; /* Define a cor do texto */
+}
+
+.imgs-container {
+  display: flex; /* Define um modelo de layout */
+  justify-content: space-between; /* Distribui os itens com espaço entre eles */
+  padding: 0rem 10rem; /* Adiciona preenchimento */
+}
+
+.imgs-row {
+  display: flex; /* Define um modelo de layout */
+  flex-direction: column; /* Define a direção dos itens como coluna */
+  gap: 7rem; /* Define o espaçamento entre os itens */
+}
+
+.img-container {
+  height: 100%; /* Define a altura */
+  display: flex; /* Define um modelo de layout flexível */
+  align-items: center; /* Alinha os itens */
+  flex-direction: column; /* Define a direção dos itens como coluna */
+  gap: 2rem; /* Define o espaçamento entre os itens */
+  border: 7px solid; /* Adiciona uma borda*/
+  border-color: black; /* Define a cor da borda */
+  box-shadow: 0 10px 30px; /* Adiciona uma sombra */
+  transition: 2s; /* Adiciona uma transição de 2 segundos */
+}
+
+.img-container img {
+  object-fit: contain; /* Define como a imagem deve se ajustar ao contêiner */
+  min-height: 17.5rem; /* Define a altura mínima da imagem */
+}
+
+
+.labels-container {
+  width: 100%; /* Define a largura*/
+}
+
+.imgs-container img:hover {
+  height: 320px; /* Define a altura da imagem ao passar o mouse sobre ela */
+}
+
+.container {
+  display: flex; /* Define um modelo de layout */
+  flex-direction: column; /* Define a direção dos itens como coluna */
+}
+
+
